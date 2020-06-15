@@ -23,7 +23,7 @@ namespace cantidad_de_0_que_hay_del_1_al_100
                 }
                 sum += cont;
             }               
-            Console.WriteLine(sum);
+            Console.WriteLine("La cantidad de 0 que hay del 1 al 100 es: "+sum);
   
             Console.ReadKey();
 
