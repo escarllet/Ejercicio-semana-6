@@ -15,13 +15,13 @@ namespace cantidad_de_0_que_hay_del_1_al_100
             for (int i = 1; i <=100; i++)
             {
                 b = Convert.ToString(i);
-                char aBuscar = '0';
-                int n = 0;
-                foreach (char c in b)
+                char buscaremos = '0';
+                int cont = 0;
+                foreach (char v in b)
                 {
-                    if (c == aBuscar) ++n;
+                    if (v == buscaremos) ++cont;
                 }
-                sum += n;
+                sum += cont;
             }               
             Console.WriteLine(sum);
   
