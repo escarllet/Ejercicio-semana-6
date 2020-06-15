@@ -10,21 +10,23 @@ namespace cantidad_de_0_que_hay_del_1_al_100
     {
         static void Main(string[] args)
         {
-            int con1=0, con2 =0;
+            string b;
+            int sum=0;
             for (int i = 1; i <=100; i++)
             {
-                if (i%10 == 0 && i<100 )
+                b = Convert.ToString(i);
+                char aBuscar = '0';
+                int n = 0;
+                foreach (char c in b)
                 {
-                    con1+= 1;
+                    if (c == aBuscar) ++n;
                 }
-                else if (i % 10 == 0 && i >= 100)
-                {
-                    con1 += 2;
-                }
-            }
-            int a = con1 + con2;
-            Console.WriteLine("la cantidad de ceros que hay del 1 al 100 es: "+a);
+                sum += n;
+            }               
+            Console.WriteLine(sum);
+  
             Console.ReadKey();
+
         }
     }
 }
